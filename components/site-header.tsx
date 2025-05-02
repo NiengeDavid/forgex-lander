@@ -3,7 +3,7 @@ import Container from "./container";
 
 export default function SiteHeader() {
   return (
-    <header className="py-3 px-2 bg-bg2 text-black">
+    <header className="py-3 bg-bg2 text-black">
       <Container className="flex items-center justify-between">
         <div className="flex items-center gap-2">
           <p className="flex items-center gap-1 hover:underline">
