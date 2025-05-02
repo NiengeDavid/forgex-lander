@@ -15,7 +15,7 @@ export default function NewsSection() {
             Learning Areas
           </h2>
           <Link
-            href="#"
+            href="#waitlist"
             className="text-primary-bg hover:text-primary-bg/80 font-medium flex items-center"
           >
             Join us now

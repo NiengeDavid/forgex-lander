@@ -37,7 +37,7 @@ export default function AdmissionSection() {
              {admissionDetails?.description}
             </p>
             <Link
-              href="#"
+              href="#waitlist"
               className="inline-block bg-btn text-black hover:bg-blue-50 font-bold py-3 px-8 rounded-sm transition-colors duration-300"
             >
               {admissionDetails?.btnText}
