@@ -8,13 +8,13 @@ export default function SiteHeader() {
         <div className="flex items-center gap-2">
           <p className="flex items-center gap-1 hover:underline">
             <Phone size={12} className="text-primary-bg" />{" "}
-            <a href="tel:+234 9103715381" className="text-sm">
+            <a href="tel:+234 9103715381" className="text-[10px]">
               +234 9103715381
             </a>
           </p>
           <p className="flex items-center gap-1 hover:underline">
             <Mail size={12} className="text-primary-bg" />
-            <a href="mailto:support@miusecurelibrary.com" className="text-sm">
+            <a href="mailto:support@miusecurelibrary.com" className="text-[10px]">
               support@forgexacademy.com.ng
             </a>
           </p>

@@ -3,7 +3,7 @@ import { Facebook, Instagram, Mail, Youtube } from "lucide-react";
 export const footerDetails = {
   title: "ForgeX Academy",
   description:
-    "ForgeX Academy is a platform that provides comprehensive resources and training for aspiring developers, helping them to build their skills and advance their careers.",
+    "A place where we empower the next generation with relevant 21st century skills that equip them to thrive in an evolving world.",
   Phone: "+234 9103715381",
   email: "support@forgexacademy.com.ng",
   address: "No.3 Mai Suya Junction, Garki, Maitama Abuja",

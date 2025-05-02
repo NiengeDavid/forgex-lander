@@ -1,7 +1,7 @@
 export const heroDetails = {
-  title: "ForgeX Academy debuts for arts, discovery, and connections.",
+  title: "FORGE X Academy: Forging the next generation for an evolving world.",
   description:
-    "ForgeX Academy is a platform that provides comprehensive resources and training for aspiring developers, helping them to build their skills and advance their careers.",
+    "At FORGE X Academy, we believe every child deserves a dynamic, supportive, and challenging environment that empowers them with 21st-century skills, leadership capacity, and the freedom to think differently.",
   buttonText: "Learn More",
   buttonHref: "#about",
   image: "/assets/hero.jpeg",
