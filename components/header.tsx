@@ -31,7 +31,7 @@ const Header: React.FC = () => {
               className="rounded-full shadow-md"
               priority
             />
-            <span className="manrope text-xl font-semibold text-primary-red cursor-pointer">
+            <span className="manrope text-xl font-semibold text-black cursor-pointer">
               {siteDetails.siteName}
             </span>
           </Link>
@@ -42,7 +42,7 @@ const Header: React.FC = () => {
               <li key={item.text}>
                 <Link
                   href={item.url}
-                  className="text-primary-text font-medium hover:text-primary-red transition-colors"
+                  className="text-primary-text font-medium hover:text-primary-bg transition-colors"
                 >
                   {item.text}
                 </Link>
@@ -86,7 +86,7 @@ const Header: React.FC = () => {
               <li key={item.text}>
                 <Link
                   href={item.url}
-                  className="text-primary-text font-medium hover:text-primary-red transition-colors"
+                  className="text-primary-text font-medium hover:text-primary-bg transition-colors"
                   onClick={toggleMenu}
                 >
                   {item.text}

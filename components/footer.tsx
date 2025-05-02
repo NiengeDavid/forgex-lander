@@ -13,7 +13,7 @@ import { footerDetails } from "@/data/footer";
 
 export default function Footer() {
   return (
-    <footer className="bg-bg2 text-black relative pt-20 pb-10 px-6 md:px-20">
+    <footer className="bg-bg2 text-black relative pt-20 pb-10 px-6">
       <Container>
         <div className="relative z-10 flex flex-col md:flex-row md:justify-between gap-10">
           {/* Left Column */}
@@ -76,12 +76,12 @@ export default function Footer() {
 
             <div>
               <h4 className="font-semibold mb-5">Follow Us</h4>
-              <div className="flex items-center gap-4 mt-2">
+              <div className="flex md:flex-col items-center gap-4 mt-2 mx-auto">
                 {footerDetails.socialLinks?.map((link) => (
                   <a
                     key={link.name}
                     href={link.url}
-                    className="p-2 border border-black rounded-full hover:bg-black hover:text-white transition"
+                    className="p-2 border border-black rounded-full hover:bg-primary-bg hover:text-white transition"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
