@@ -8,7 +8,7 @@ const img = "/assets/admission.jpeg";
 
 export default function AdmissionSection() {
   return (
-    <section className="pb-16 bg-primary-bg text-white lg:pb-0">
+    <section id="admission" className="pb-16 bg-primary-bg text-white lg:pb-0">
       <Container className="mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center lg:gap-14">
           {/* Left Column - Image or Illustration (placeholder) */}

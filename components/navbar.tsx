@@ -4,7 +4,7 @@ import Header from "./header";
 
 export default function Navbar() {
   return (
-    <div className="w-full">
+    <div className="w-full fixed z-50">
       <SiteHeader />
       <Header />
     </div>

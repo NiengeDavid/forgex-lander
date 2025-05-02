@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function NewsSection() {
 
   return (
-    <section className="py-12 px-4 sm:px-6 lg:px-8 bg-bg2">
+    <section id="curriculum" className="py-12 px-4 sm:px-6 lg:px-8 bg-bg2">
       <Container className="mx-auto">
         {/* Section Header */}
         <div className="flex justify-between items-center mb-8">

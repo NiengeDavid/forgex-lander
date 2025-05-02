@@ -11,16 +11,9 @@ import Image from "next/image";
 import { ctaDetails } from "@/data/cta";
 
 export default function CTASection() {
-  // Sample carousel images - replace with your actual images
-  const carouselImages = [
-    "/assets/school-1.jpeg",
-    "/assets/school-2.jpeg",
-    "/assets/school-3.jpeg",
-    "/assets/school-4.jpeg",
-  ];
 
   return (
-    <section className="py-12 px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="about" className="py-12 px-4 sm:px-6 lg:px-8 bg-white">
       <Container className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* left Column - Carousel */}
         <div className="w-full">

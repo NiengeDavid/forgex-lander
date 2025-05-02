@@ -46,7 +46,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="bg-white py-12">
+    <div id="contact" className="bg-white py-12">
       <Container>
         <h2 className="text-2xl md:text-3xl font-bold text-black mb-8 md:mb-16">
           Contact Us

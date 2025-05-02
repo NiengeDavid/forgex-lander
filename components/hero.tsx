@@ -5,11 +5,11 @@ import { heroDetails } from "@/data/hero";
 const img = "/assets/hero.jpeg";
 export default function Hero() {
   return (
-    <section className="bg-primary-bg">
+    <section id="home" className="bg-primary-bg mt-24 md:mt-28">
       <Container>
         <div className="flex flex-col justify-between items-center mx-auto gap-6 md:flex-row">
-          <div className="w-full flex flex-col items-start text-white gap-5 pt-12 mt:py-0">
-            <h3 className="text-3xl md:text-xl lg:text-4xl font-bold">
+          <div className="w-full flex flex-col items-start text-white gap-5 py-12 lg:py-0">
+            <h3 className="text-2xl md:text-xl lg:text-3xl font-bold">
               {heroDetails?.title}
             </h3>
             <p className="text-sm font-light  text-white">
