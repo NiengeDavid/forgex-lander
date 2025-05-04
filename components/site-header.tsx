@@ -8,14 +8,14 @@ export default function SiteHeader() {
         <div className="flex items-center gap-2">
           <p className="flex items-center gap-1 hover:underline">
             <Phone size={12} className="text-primary-bg" />{" "}
-            <a href="tel:+234 9103715381" className="text-[10px]">
-              +234 9103715381
+            <a href="tel:+234 81153110901" className="text-[10px]">
+              +234 81153110901
             </a>
           </p>
           <p className="flex items-center gap-1 hover:underline">
             <Mail size={12} className="text-primary-bg" />
-            <a href="mailto:support@miusecurelibrary.com" className="text-[10px]">
-              support@forgexacademy.com.ng
+            <a href="mailto:forgexacademy@gmail.com" className="text-[10px]">
+              forgexacademy@gmail.com
             </a>
           </p>
         </div>
@@ -23,7 +23,7 @@ export default function SiteHeader() {
           <p className="flex items-center gap-2">
             <Home size={12} className="text-primary-bg" />
             <span className="text-sm">
-              No.3 Mai Suya Junction, Garki, Maitama Abuja
+              19, 444 Crescent Citec Villa Estate, Gwarinpa, Abuja.
             </span>
           </p>
         </div>

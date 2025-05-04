@@ -53,27 +53,27 @@ export default function CTASection() {
           <div className="grid grid-cols-2 gap-8">
             <div className="text-start">
               <p className="text-4xl font-bold text-black border-b-5 border-primary-bg w-24 pb-2">
-                2100+
+                5+
               </p>
-              <p className="text-lg mt-1">Students</p>
-            </div>
-            <div className="text-start">
-              <p className="text-4xl font-bold text-black border-b-5 border-primary-bg w-24 pb-2">
-                95%
-              </p>
-              <p className="text-lg mt-1">Sports</p>
-            </div>
-            <div className="text-start">
-              <p className="text-4xl font-bold text-black border-b-5 border-primary-bg w-24 pb-2">
-                235+
-              </p>
-              <p className="text-lg mt-1">Staff</p>
+              <p className="text-lg mt-1">Core Learning Areas</p>
             </div>
             <div className="text-start">
               <p className="text-4xl font-bold text-black border-b-5 border-primary-bg w-24 pb-2">
                 100%
               </p>
-              <p className="text-lg mt-1">Discipline</p>
+              <p className="text-lg mt-1">English Language Instruction</p>
+            </div>
+            <div className="text-start">
+              <p className="text-3xl font-bold text-black border-b-5 border-primary-bg w-32 pb-2">
+                5 - 18
+              </p>
+              <p className="text-lg mt-1">Age (Gen Alpha, Beta & Z)</p>
+            </div>
+            <div className="text-start">
+              <p className="text-4xl font-bold text-black border-b-5 border-primary-bg w-24 pb-2">
+                95%
+              </p>
+              <p className="text-lg mt-1">Flexible Scheduling</p>
             </div>
           </div>
         </div>

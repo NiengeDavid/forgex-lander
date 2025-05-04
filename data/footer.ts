@@ -4,9 +4,9 @@ export const footerDetails = {
   title: "ForgeX Academy",
   description:
     "A place where we empower the next generation with relevant 21st century skills that equip them to thrive in an evolving world.",
-  Phone: "+234 9103715381",
-  email: "support@forgexacademy.com.ng",
-  address: "No.3 Mai Suya Junction, Garki, Maitama Abuja",
+  Phone: "+234 81153110901",
+  email: "forgexacademy@gmail.com",
+  address: "19, 444 Crescent Citec Villa Estate, Gwarinpa, Abuja.",
   socialLinks: [
     {
       name: "Facebook",
