@@ -55,7 +55,7 @@ export default function Contact() {
 
     try {
       // Submit the form to Netlify
-      await fetch("/", {
+      await fetch("/submission-endpoint.html", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData as any).toString(),
