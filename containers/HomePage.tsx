@@ -4,12 +4,14 @@ import NewsSection from "@/components/newsSection";
 import AdmissionSection from "@/components/admission";
 import Contact from "@/components/contact";
 import WaitlistSection from "@/components/waitlist";
+import Vision from "@/components/vision";
 
 export default function HomePage() {
   return (
     <div className="w-full">
       <Hero />
       <CTASection />
+      <Vision />
       <NewsSection />
       <AdmissionSection />
       <Contact />
