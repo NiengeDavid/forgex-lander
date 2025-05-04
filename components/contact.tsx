@@ -77,9 +77,7 @@ export default function Contact() {
             </p>
             <p className="flex items-center gap-1">
               <MapPin size={24} className="text-primary-bg" />
-              <span className="text-gray-700">
-                {contactDetails?.address}
-              </span>
+              <span className="text-gray-700">{contactDetails?.address}</span>
             </p>
             <div className="flex items-center gap-4 mt-6 mx-auto">
               {contactDetails.socialLinks?.map((link) => (
@@ -105,6 +103,8 @@ export default function Contact() {
               <form
                 onSubmit={form.handleSubmit(onSubmit)}
                 className="space-y-4"
+                name="contact"
+                data-netlify="true"
               >
                 {/* Name Field */}
                 <FormField

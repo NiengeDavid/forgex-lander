@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import Container from "./container";
 import { useForm } from "react-hook-form";
@@ -36,7 +36,10 @@ export default function WaitlistSection() {
   };
 
   return (
-    <section id="waitlist" className="py-16 px-4 sm:px-6 lg:px-8 bg-primary-bg text-white">
+    <section
+      id="waitlist"
+      className="py-16 px-4 sm:px-6 lg:px-8 bg-primary-bg text-white"
+    >
       <Container className="max-w-4xl mx-auto text-center">
         <div className="p-8 md:p-10 lg:p-12">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
@@ -47,6 +50,8 @@ export default function WaitlistSection() {
             <form
               onSubmit={form.handleSubmit(onSubmit)}
               className="mt-8 flex flex-col sm:flex-row gap-4 max-w-md mx-auto sm:max-w-xl"
+              name="waitlist"
+              data-netlify="true"
             >
               {/* Email Field */}
               <FormField
