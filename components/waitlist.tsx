@@ -55,7 +55,7 @@ export default function WaitlistSection() {
               data-netlify="true"
             >
               {/* Hidden input for Netlify Forms */}
-              <input type="hidden" name="form-name" value="contact" />
+              <input type="hidden" name="form-name" value="waitlist" />
 
               {/* Email Field */}
               <FormField
