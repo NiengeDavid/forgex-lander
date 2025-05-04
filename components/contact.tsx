@@ -139,6 +139,7 @@ export default function Contact() {
                 className="space-y-4"
                 name="contact"
                 method="POST"
+                action="/submission-endpoint.html"
                 data-netlify="true"
               >
                 {/* Hidden input for Netlify Forms */}

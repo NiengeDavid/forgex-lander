@@ -80,6 +80,7 @@ export default function WaitlistSection() {
               className="mt-8 flex flex-col sm:flex-row gap-4 max-w-md mx-auto sm:max-w-xl"
               name="waitlist"
               method="POST"
+              action="/submission-endpoint.html"
               data-netlify="true"
             >
               {/* Hidden input for Netlify Forms */}
