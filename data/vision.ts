@@ -4,7 +4,7 @@ export const visionDetails = {
     "A place where we empower the next generation with relevant 21st century skills that equip them to thrive in an evolving world.",
   missionHead: "Our Mission",
   mission:
-    "We are  redefining education by a providing a dynamic learning environment that goes beyond traditional academics to 21st century learning raising problem solvers who will shape the future.",
+    "We are redefining education by providing a dynamic learning environment that goes beyond traditional academics to 21st century learning, raising problem solvers who will shape the future.",
   founderHead: "Founder’s Message",
   founderNotes1:
     "For years, I’ve worked closely with children who learn differently — especially those with dyslexia. And what I discovered was simple, yet life-changing: these children weren’t broken. They were brilliant. They didn’t need fixing. They needed freedom, Freedom to think differently, Freedom to learn in ways that made sense to them, Freedom to become who they were created to be. That’s where the vision for FORGE X Academy began.",

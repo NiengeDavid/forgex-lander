@@ -1,29 +1,29 @@
 import { Facebook, Instagram, Mail, Youtube } from "lucide-react";
 
 export const contactDetails = {
-  Phone: "+234 9103715381",
-  email: "support@forgexacademy.com.ng",
-  address: "No.3 Mai Suya Junction, Garki, Maitama Abuja",
+  Phone: "+234 81153110901",
+  email: "forgexacademy@gmail.com",
+  address: "19, 444 Crescent Citec Villa Estate, Gwarinpa, Abuja.",
   socialLinks: [
     {
       name: "Facebook",
-      url: "#",
+      url: "https://www.facebook.com/share/14diyZukuP/?mibextid=LQQJ4d",
       icon: Facebook,
     },
     {
       name: "Instagram",
-      url: "#",
+      url: "https://www.instagram.com/forge_x_academy",
       icon: Instagram,
     },
     {
       name: "Email",
-      url: "#",
+      url: "mailto:forgexacademy@gmail.com",
       icon: Mail,
     },
-    {
-      name: "Youtube",
-      url: "#",
-      icon: Youtube,
-    },
+    // {
+    //   name: "Youtube",
+    //   url: "#",
+    //   icon: Youtube,
+    // },
   ],
 };

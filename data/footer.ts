@@ -10,23 +10,23 @@ export const footerDetails = {
   socialLinks: [
     {
       name: "Facebook",
-      url: "#",
+      url: "https://www.facebook.com/share/14diyZukuP/?mibextid=LQQJ4d",
       icon: Facebook,
     },
     {
       name: "Instagram",
-      url: "#",
+      url: "https://www.instagram.com/forge_x_academy",
       icon: Instagram,
     },
     {
       name: "Email",
-      url: "#",
+      url: "mailto:forgexacademy@gmail.com",
       icon: Mail,
     },
-    {
-      name: "Youtube",
-      url: "#",
-      icon: Youtube,
-    },
+    // {
+    //   name: "Youtube",
+    //   url: "#",
+    //   icon: Youtube,
+    // },
   ],
 };
