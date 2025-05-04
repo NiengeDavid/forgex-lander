@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Container from "./container";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -14,6 +15,8 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { Loader2 } from "lucide-react";
+import { toast } from "sonner";
 
 // Define the schema using zod
 const waitlistFormSchema = z.object({
@@ -23,6 +26,7 @@ const waitlistFormSchema = z.object({
 type WaitlistFormValues = z.infer<typeof waitlistFormSchema>;
 
 export default function WaitlistSection() {
+  const [isLoading, setIsLoading] = useState(false); // Loading state
   const form = useForm<WaitlistFormValues>({
     resolver: zodResolver(waitlistFormSchema),
     defaultValues: {
@@ -30,9 +34,33 @@ export default function WaitlistSection() {
     },
   });
 
-  const onSubmit = (data: WaitlistFormValues) => {
-    console.log("Form Submitted:", data);
-    // Add your form submission logic here (e.g., API call)
+  const onSubmit = async (data: WaitlistFormValues) => {
+    setIsLoading(true); // Start loading
+    const formName = "waitlist"; // Match the form name in your Netlify form
+    const formData = new FormData();
+
+    // Append form fields to FormData
+    formData.append("form-name", formName);
+    Object.entries(data).forEach(([key, value]) => {
+      formData.append(key, value);
+    });
+
+    try {
+      // Submit the form to Netlify
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData as any).toString(),
+      });
+
+      toast.success("You’ve been added to the waitlist!"); // Show success toast
+      form.reset(); // Reset the form
+    } catch (error) {
+      //console.error("Form submission error:", error);
+      toast.error("There was an error submitting the form. Please try again."); // Show error toast
+    } finally {
+      setIsLoading(false); // Stop loading
+    }
   };
 
   return (
@@ -80,9 +108,13 @@ export default function WaitlistSection() {
               {/* Submit Button */}
               <Button
                 type="submit"
-                className="px-6 py-6 bg-btn hover:bg-btn/80 text-black font-medium rounded-lg transition-colors duration-300 whitespace-nowrap"
+                className="px-6 py-6 bg-btn hover:bg-btn/80 text-black font-medium rounded-lg transition-colors duration-300 whitespace-nowrap flex items-center justify-center"
+                disabled={isLoading}
               >
-                Subscribe
+                {isLoading ? (
+                  <Loader2 className="animate-spin mr-2" size={16} />
+                ) : null}
+                {isLoading ? "Submitting..." : "Subscribe"}
               </Button>
             </form>
           </Form>
