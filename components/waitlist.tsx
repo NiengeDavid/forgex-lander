@@ -51,8 +51,12 @@ export default function WaitlistSection() {
               onSubmit={form.handleSubmit(onSubmit)}
               className="mt-8 flex flex-col sm:flex-row gap-4 max-w-md mx-auto sm:max-w-xl"
               name="waitlist"
+              method="POST"
               data-netlify="true"
             >
+              {/* Hidden input for Netlify Forms */}
+              <input type="hidden" name="form-name" value="contact" />
+
               {/* Email Field */}
               <FormField
                 control={form.control}

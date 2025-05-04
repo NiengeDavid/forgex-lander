@@ -104,8 +104,12 @@ export default function Contact() {
                 onSubmit={form.handleSubmit(onSubmit)}
                 className="space-y-4"
                 name="contact"
+                method="POST"
                 data-netlify="true"
               >
+                {/* Hidden input for Netlify Forms */}
+                <input type="hidden" name="form-name" value="contact" />
+
                 {/* Name Field */}
                 <FormField
                   control={form.control}
